@@ -110,7 +110,7 @@ export const productsAPI = {
   getAll: async (page = 1, limit = 10) => {
     try {
       const data = await fetch(
-        `${API_BASE_URL}/products/?page=${page}&limit=${limit}`,
+        `${API_BASE_URL}/api/products/?page=${page}&limit=${limit}`,
         {
           method: "GET",
         }
@@ -286,7 +286,7 @@ export const ordersAPI = {
       }
 
       // Add page parameter to the URL
-      const response = await fetch(`${API_BASE_URL}/orders?page=${page}`, {
+      const response = await fetch(`${API_BASE_URL}/api/orders/?page=${page}`, {
         method: "GET",
         headers,
       });
