@@ -286,7 +286,7 @@ export const ordersAPI = {
       }
 
       // Add page parameter to the URL
-      const response = await fetch(`${API_BASE_URL}/orders/?page=${page}`, {
+      const response = await fetch(`${API_BASE_URL}/orders?page=${page}`, {
         method: "GET",
         headers,
       });
